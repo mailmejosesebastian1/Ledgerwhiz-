@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledgerwhiz — Tax, GST &amp; Accounting Advisors, Pala, Kerala</title>
+<meta name="description" content="Ledgerwhiz is a Kerala-based tax and accounting practice offering ITR filing, GST registration and filing, bookkeeping, audit, and business registrations for individuals and businesses across India.">
+<link rel="canonical" href="https://www.ledgerwhiz.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ledgerwhiz — Tax, GST &amp; Accounting Advisors, Pala, Kerala">
+<meta property="og:description" content="Professional tax, GST, and bookkeeping services for individuals and businesses. We handle your compliance so you can focus on growth.">
+<meta property="og:url" content="https://www.ledgerwhiz.com/">
+<meta name="theme-color" content="#0F2A3F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F2A3F;
+    --navy-deep:#0A1F30;
+    --ink:#1B2530;
+    --ink-soft:#5B6672;
+    --line:#E4E7EB;
+    --paper:#FFFFFF;
+    --paper-alt:#F7F8FA;
+    --accent:#B8863A;
+    --accent-soft:#F4ECDD;
+    --radius:6px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Inter',sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Sora',sans-serif; margin:0; color:var(--ink); font-weight:600;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 28px;}
+  img{max-width:100%; display:block;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  html{-webkit-text-size-adjust:100%; text-size-adjust:100%;}
+  @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms !important; transition-duration:.001ms !important;}}
+
+  /* ---------- Header ---------- */
+  header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
+  .logo{font-family:'Sora',sans-serif; font-size:20px; font-weight:700; color:var(--navy);}
+  .logo span{color:var(--accent);}
+  .nav-links{display:flex; gap:30px; font-size:14.5px; color:var(--ink-soft);}
+  .nav-links a:hover{color:var(--navy);}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:var(--radius); font-size:14px; font-weight:600; border:1px solid transparent; cursor:pointer; transition:background .15s,color .15s;}
+  .btn-primary{background:var(--navy); color:#fff;}
+  .btn-primary:hover{background:var(--navy-deep);}
+  .btn-outline{border-color:var(--line); color:var(--navy);}
+  .btn-outline:hover{border-color:var(--navy);}
+  .menu-toggle{display:none; background:none; border:none; font-size:24px; color:var(--navy); cursor:pointer;}
+
+  /* ---------- Mobile slide-in menu ---------- */
+  .mobile-menu{
+    position:fixed; top:0; right:0; height:100%; width:78%; max-width:320px;
+    background:#fff; z-index:100; transform:translateX(100%);
+    transition:transform .28s ease; box-shadow:-18px 0 40px -20px rgba(15,42,63,0.25);
+    display:flex; flex-direction:column;
+  }
+  .mobile-menu.open{transform:translateX(0);}
+  .mobile-menu-head{display:flex; align-items:center; justify-content:space-between; padding:20px 22px; border-bottom:1px solid var(--line);}
+  .mobile-menu-close{background:none; border:none; font-size:26px; color:var(--navy); cursor:pointer; line-height:1;}
+  .mobile-menu nav{display:flex; flex-direction:column; padding:12px;}
+  .mobile-menu nav a{
+    padding:15px 14px; border-radius:8px; font-size:17px; font-weight:600; color:var(--ink-soft);
+  }
+  .mobile-menu nav a.active, .mobile-menu nav a:hover{background:var(--accent-soft); color:var(--navy);}
+  .mobile-menu-cta{padding:18px 22px; border-top:1px solid var(--line); margin-top:auto;}
+  .scrim{position:fixed; inset:0; background:rgba(10,31,48,0.4); z-index:90; opacity:0; pointer-events:none; transition:opacity .28s ease;}
+  .scrim.open{opacity:1; pointer-events:auto;}
+
+  /* ---------- Hero (dark) ---------- */
+  .hero{background:linear-gradient(180deg,var(--navy) 0%, var(--navy-deep) 100%); color:#fff; padding:96px 0 84px; text-align:center;}
+  .badge{display:inline-block; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.16); color:#CBD5DF; font-size:13px; padding:8px 16px; border-radius:999px; margin-bottom:28px;}
+  .hero h1{font-size:clamp(32px,4.6vw,50px); line-height:1.14; max-width:16ch; margin:0 auto; color:#fff;}
+  .hero h1 .accent{color:var(--accent);}
+  .hero p{color:#B9C3CE; font-size:16.5px; max-width:52ch; margin:22px auto 34px;}
+  .hero-cta{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+  .btn-light{background:#fff; color:var(--navy);}
+  .btn-light:hover{background:#EDEFF2;}
+  .btn-outline-light{border-color:rgba(255,255,255,0.3); color:#fff;}
+  .btn-outline-light:hover{border-color:#fff;}
+
+  .hero-stats{display:flex; justify-content:center; gap:64px; margin-top:56px; flex-wrap:wrap;}
+  .hstat-num{font-family:'Sora',sans-serif; font-size:30px; font-weight:700; color:#fff;}
+  .hstat-label{font-size:12.5px; color:#93A0AC; margin-top:4px; letter-spacing:.02em;}
+
+  /* ---------- Section shell ---------- */
+  section{padding:88px 0;}
+  .section-head{max-width:620px; margin:0 auto 48px; text-align:center;}
+  .eyebrow{font-size:12.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; display:block;}
+  .section-head h2{font-size:clamp(26px,3vw,34px); line-height:1.2;}
+  .section-head p{color:var(--ink-soft); font-size:15.5px; margin-top:14px;}
+
+  /* ---------- About ---------- */
+  .about{background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  .about-badges{display:flex; gap:12px; margin-bottom:20px; flex-wrap:wrap;}
+  .pill{font-size:12.5px; font-weight:600; color:var(--navy); background:var(--accent-soft); padding:6px 14px; border-radius:999px;}
+  .about-copy h3{font-size:22px; margin-bottom:14px;}
+  .about-copy p{color:var(--ink-soft); font-size:15px; margin-bottom:0;}
+  .about-cards{display:grid; gap:16px;}
+  .about-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; display:flex; gap:16px; align-items:flex-start;}
+  .about-card .ic{width:38px; height:38px; border-radius:8px; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-size:15px; flex-shrink:0;}
+  .about-card h4{font-size:15.5px; margin-bottom:4px;}
+  .about-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+
+  /* ---------- Services ---------- */
+  .svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .svc-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:28px 24px; transition:border-color .15s, box-shadow .15s;}
+  .svc-card:hover{border-color:var(--navy); box-shadow:0 12px 28px -18px rgba(15,42,63,0.35);}
+  .svc-icon{width:42px; height:42px; border-radius:8px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-weight:700; font-size:16px; margin-bottom:18px;}
+  .svc-card h3{font-size:17px; margin-bottom:10px;}
+  .svc-card p{font-size:14px; color:var(--ink-soft); margin:0 0 16px;}
+  .svc-card ul{list-style:none; padding:0; margin:0 0 18px; font-size:13.5px; color:var(--ink-soft);}
+  .svc-card ul li{padding:5px 0; padding-left:18px; position:relative;}
+  .svc-card ul li::before{content:"—"; position:absolute; left:0; color:var(--accent);}
+  .svc-link{font-size:13.5px; font-weight:600; color:var(--navy);}
+  .svc-link:hover{color:var(--accent);}
+
+  /* ---------- Testimonials ---------- */
+  .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .testi{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px;}
+  .testi p.body{font-size:14.5px; color:var(--ink-soft); margin:0 0 20px;}
+  .who{display:flex; align-items:center; gap:12px;}
+  .avatar{width:38px; height:38px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-size:13px; font-weight:600;}
+  .who-name{font-size:14px; font-weight:600;}
+  .who-role{font-size:12.5px; color:var(--ink-soft);}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--paper-alt); border-top:1px solid var(--line);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  .info-row{display:flex; gap:16px; margin-bottom:24px;}
+  .info-ic{width:40px; height:40px; border-radius:8px; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:16px;}
+  .info-row h4{font-size:14.5px; margin-bottom:4px;}
+  .info-row p{font-size:14px; color:var(--ink-soft); margin:0;}
+  form{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:28px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:var(--ink);}
+  .field input, .field textarea{width:100%; padding:11px 13px; border:1px solid var(--line); border-radius:5px; font-family:'Inter',sans-serif; font-size:14px; color:var(--ink); background:var(--paper);}
+  .field textarea{resize:vertical; min-height:100px;}
+  .field input:focus, .field textarea:focus{outline:none; border-color:var(--navy);}
+
+  /* ---------- CTA ---------- */
+  .cta-band{background:var(--navy); color:#fff; text-align:center; padding:64px 0;}
+  .cta-band h2{color:#fff; font-size:clamp(24px,3vw,30px); margin-bottom:12px;}
+  .cta-band p{color:#B9C3CE; margin-bottom:26px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-deep); color:#93A0AC; padding:54px 0 26px; font-size:13.5px;}
+  .foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:32px; padding-bottom:32px; border-bottom:1px solid rgba(255,255,255,0.1);}
+  .foot-logo{font-family:'Sora',sans-serif; color:#fff; font-size:19px; font-weight:700; margin-bottom:12px;}
+  .foot-logo span{color:var(--accent);}
+  .foot-grid h4{color:#fff; font-size:12.5px; text-transform:uppercase; letter-spacing:.07em; margin-bottom:16px; font-weight:600;}
+  .foot-grid a{display:block; color:#93A0AC; margin-bottom:10px;}
+  .foot-grid a:hover{color:#fff;}
+  .foot-bottom{display:flex; justify-content:space-between; padding-top:22px; flex-wrap:wrap; gap:10px;}
+
+  .wa-float{position:fixed; bottom:24px; right:24px; z-index:60; background:#25D366; width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px -8px rgba(0,0,0,0.4); transition:transform .15s;}
+  .wa-float:hover{transform:scale(1.06);}
+
+  @media (max-width:900px){
+    .about-grid, .contact-grid{grid-template-columns:1fr;}
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .testi-grid{grid-template-columns:repeat(2,1fr);}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .nav-links{display:none;}
+    .menu-toggle{display:block; min-width:44px; min-height:44px;}
+    .hero-stats{gap:36px;}
+    .btn{min-height:44px;}
+  }
+  @media (max-width:560px){
+    .svc-grid{grid-template-columns:1fr;}
+    .testi-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .hero{padding:64px 0 56px;}
+    section{padding:56px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">Ledger<span>whiz</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="/for-cas/">For CA's</a>
+      <a href="/training/">Training</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+919995394549">Call Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <span class="logo">Ledger<span>whiz</span></span>
+    <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav id="mobileNavLinks">
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="/for-cas/">For CA's</a>
+    <a href="/training/">Training</a>
+  </nav>
+  <div class="mobile-menu-cta">
+    <a class="btn btn-primary" style="width:100%; justify-content:center;" href="https://wa.me/919995394549" target="_blank" rel="noopener">Message on WhatsApp</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">Trusted by 500+ clients across Kerala</span>
+      <h1>Simplifying Taxes. <span class="accent">Getting Your Books Right.</span></h1>
+      <p>Professional tax, GST, and bookkeeping services for individuals and businesses. We handle your compliance so you can focus on growth.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#contact">Book Consultation</a>
+        <a class="btn btn-outline-light" href="tel:+919995394549">Call Now</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hstat-num">500+</div><div class="hstat-label">Clients served</div></div>
+        <div><div class="hstat-num">10+</div><div class="hstat-label">Years experience</div></div>
+        <div><div class="hstat-num">100%</div><div class="hstat-label">Compliance record</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <span class="eyebrow">Who we are</span>
+        <div class="about-badges">
+          <span class="pill">Trusted since 2015</span>
+          <span class="pill">Certified experts</span>
+          <span class="pill">100% compliant</span>
+        </div>
+        <h3>Expertise You Can Rely On</h3>
+        <p>Ledgerwhiz is a Kerala-based tax and accounting practice serving individuals and businesses across India. Our team brings deep knowledge of Indian tax law and a client-first approach to every engagement — from a single ITR to full monthly bookkeeping.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card"><div class="ic">1</div><div><h4>Tax Filing</h4><p>Accurate, timely income tax return filing for individuals, professionals, and businesses.</p></div></div>
+        <div class="about-card"><div class="ic">2</div><div><h4>GST Services</h4><p>Registration, return filing, reconciliation, and full compliance management.</p></div></div>
+        <div class="about-card"><div class="ic">3</div><div><h4>Bookkeeping &amp; Advisory</h4><p>Monthly books, financial planning, and practical advisory for growing businesses.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What we offer</span>
+        <h2>Comprehensive Tax &amp; Financial Solutions</h2>
+        <p>Designed to keep you compliant and financially organised, year-round.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-icon">01</div>
+          <h3>Income Tax Filing</h3>
+          <p>Seamless, accurate ITR filing for salaried professionals, freelancers, and businesses.</p>
+          <ul><li>ITR-1 to ITR-7 filing</li><li>Tax planning &amp; optimisation</li><li>Refund assistance</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">02</div>
+          <h3>GST Registration &amp; Filing</h3>
+          <p>End-to-end GST solutions for businesses of every size.</p>
+          <ul><li>GST registration</li><li>Monthly / quarterly filing</li><li>GSTR reconciliation</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">03</div>
+          <h3>Bookkeeping</h3>
+          <p>Books maintained and reconciled monthly — ready for audit or funding.</p>
+          <ul><li>Monthly reconciliation</li><li>Tally / Excel books</li><li>TDS &amp; payroll support</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">04</div>
+          <h3>Audit &amp; Compliance</h3>
+          <p>Thorough audit and compliance management for regulatory confidence.</p>
+          <ul><li>Statutory audits</li><li>Internal audits</li><li>Regulatory compliance</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">05</div>
+          <h3>Company, LLP &amp; Partnership Registration</h3>
+          <p>Business structure set up correctly from day one, with all statutory filings in place.</p>
+          <ul><li>Private limited company registration</li><li>LLP registration</li><li>Partnership firm registration</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">06</div>
+          <h3>Digital Signature Certificate</h3>
+          <p>DSC issuance for filings, tenders, and statutory e-signing needs.</p>
+          <ul><li>Class 3 DSC for individuals</li><li>DSC for company directors</li><li>Renewal &amp; support</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">07</div>
+          <h3>Import Export Code (IEC)</h3>
+          <p>IEC license for businesses looking to import or export goods and services.</p>
+          <ul><li>New IEC registration</li><li>IEC modification</li><li>DGFT documentation support</li></ul>
+          <a class="svc-link" href="#contact">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" style="background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Client stories</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from businesses and individuals who trust us with their tax needs.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi"><p class="body">"Our GST filings used to slip every quarter. Since moving to Ledgerwhiz, we haven't missed a single due date."</p><div class="who"><div class="avatar">RM</div><div><div class="who-name">Rejith M.</div><div class="who-role">Retail shop owner, Pala</div></div></div></div>
+        <div class="testi"><p class="body">"They explained the old vs new tax regime in plain language and it saved me real money this year."</p><div class="who"><div class="avatar">AS</div><div><div class="who-name">Anu S.</div><div class="who-role">Salaried professional</div></div></div></div>
+        <div class="testi"><p class="body">"Monthly books are reconciled without me chasing anyone. First time our accounts have felt current."</p><div class="who"><div class="avatar">TJ</div><div><div class="who-name">Thomas J.</div><div class="who-role">Small manufacturer</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h2 style="margin-bottom:26px;">Ready To Simplify Your Taxes?</h2>
+        <div class="info-row"><div class="info-ic">📍</div><div><h4>Visit Us</h4><p>376/4 1st Floor, Puthumana Arcade, near Axis Bank,<br>Kottaramattom, Pala, Kerala 686575</p></div></div>
+        <div class="info-row"><div class="info-ic">📞</div><div><h4>Call Us</h4><p>+91 99953 94549</p></div></div>
+        <div class="info-row"><div class="info-ic">✉️</div><div><h4>Email Us</h4><p>office@ledgerwhiz.in</p></div></div>
+        <div class="info-row"><div class="info-ic">🕒</div><div><h4>Working Hours</h4><p>Mon – Sat: 9:00 AM – 7:30 PM</p></div></div>
+      </div>
+      <form id="contactForm">
+        <h3 style="font-size:18px; margin-bottom:18px;">Send Us A Message</h3>
+        <div class="field"><label>Full Name *</label><input type="text" id="cf-name" required></div>
+        <div class="field"><label>Phone Number *</label><input type="tel" id="cf-phone" required></div>
+        <div class="field"><label>Message *</label><textarea id="cf-message" required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        <p class="sent" style="display:none; color:var(--accent); font-size:13.5px; margin:12px 0 0;">Opening WhatsApp to send your message…</p>
+      </form>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Let's Get Your Filings In Order</h2>
+      <p>Message us on WhatsApp — most queries get a reply within a few hours.</p>
+      <a class="btn btn-light" href="https://wa.me/919995394549" target="_blank" rel="noopener">Message on WhatsApp</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Ledger<span>whiz</span></div>
+        <p style="max-width:34ch;">Your trusted partner for tax and financial advisory — simplifying compliance for individuals and businesses across Kerala and India.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Income Tax Filing</a>
+        <a href="#services">GST Registration</a>
+        <a href="#services">Bookkeeping</a>
+        <a href="#services">Audit &amp; Compliance</a>
+        <a href="#services">Company / LLP Registration</a>
+        <a href="#services">Digital Signature (DSC)</a>
+        <a href="#services">Import Export Code</a>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <a href="tel:+919995394549">+91 99953 94549</a>
+        <a href="mailto:office@ledgerwhiz.in">office@ledgerwhiz.in</a>
+        <span style="display:block; margin-bottom:10px;">Mon – Sat: 9AM – 7:30PM</span>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="https://whatsapp.com/channel/0029VbDwecMKLaHpdBRP323n" target="_blank" rel="noopener">Tax Updates (WhatsApp Channel)</a>
+        <a href="https://instagram.com/ledgerwhiz.official" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ledgerwhiz. All rights reserved.</span>
+      <span>Pala, Kottayam District, Kerala</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919995394549" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.6 6.32A8.86 8.86 0 0 0 3.36 16.86L2 22l5.28-1.38a8.86 8.86 0 0 0 4.2 1.07h.01a8.86 8.86 0 0 0 6.11-15.37ZM11.5 20.1h-.01a7.37 7.37 0 0 1-3.75-1.03l-.27-.16-2.79.73.75-2.72-.18-.28a7.37 7.37 0 1 1 13.68-3.92 7.33 7.33 0 0 1-7.43 7.38Zm4.04-5.52c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05a6.05 6.05 0 0 1-1.78-1.1 6.68 6.68 0 0 1-1.23-1.53c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.07-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31.11.15 1.57 2.4 3.8 3.36.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.31-.54 1.5-1.06.18-.51.18-.95.13-1.05-.05-.1-.2-.16-.42-.27Z"/></svg>
+</a>
+
+<script>
+  const menuToggle=document.getElementById('menuToggle');
+  const menuClose=document.getElementById('menuClose');
+  const mobileMenu=document.getElementById('mobileMenu');
+  const scrim=document.getElementById('scrim');
+
+  function openMenu(){
+    mobileMenu.classList.add('open'); scrim.classList.add('open');
+    menuToggle.setAttribute('aria-expanded','true');
+  }
+  function closeMenu(){
+    mobileMenu.classList.remove('open'); scrim.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded','false');
+  }
+  menuToggle.addEventListener('click',openMenu);
+  menuClose.addEventListener('click',closeMenu);
+  scrim.addEventListener('click',closeMenu);
+  document.querySelectorAll('#mobileNavLinks a').forEach(a=>a.addEventListener('click',closeMenu));
+
+  // highlight active link based on section in view
+  const sections=['top','about','services','testimonials','contact'].map(id=>document.getElementById(id)).filter(Boolean);
+  const mobileLinks=document.querySelectorAll('#mobileNavLinks a');
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        mobileLinks.forEach(l=>l.classList.remove('active'));
+        const match=document.querySelector(`#mobileNavLinks a[href="#${entry.target.id}"]`);
+        if(match) match.classList.add('active');
+      }
+    });
+  },{rootMargin:'-40% 0px -50% 0px'});
+  sections.forEach(s=>io.observe(s));
+
+  // Contact form -> send via WhatsApp (no backend on a static site, so this is the reliable delivery path)
+  const contactForm=document.getElementById('contactForm');
+  if(contactForm){
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name=document.getElementById('cf-name').value.trim();
+      const phone=document.getElementById('cf-phone').value.trim();
+      const message=document.getElementById('cf-message').value.trim();
+      const text=`Hello Ledgerwhiz, I'm ${name} (${phone}).\n\n${message}`;
+      const waUrl='https://wa.me/919995394549?text='+encodeURIComponent(text);
+      contactForm.querySelector('.sent').style.display='block';
+      window.open(waUrl, '_blank', 'noopener');
+    });
+  }
+</script>
+
+</body>
+</html>
