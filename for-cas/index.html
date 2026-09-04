@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledgerwhiz for CA's — Outsourced Bookkeeping &amp; Backend Processing for Chartered Accountants</title>
+<meta name="description" content="Ledgerwhiz provides confidential, white-label back-office processing for CA firms — bookkeeping, reconciliation, GST/ITR data preparation, and statutory registrations.">
+<link rel="canonical" href="https://www.ledgerwhiz.in/for-cas/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ledgerwhiz for CA's — Back-Office Processing for Chartered Accountants">
+<meta property="og:description" content="Bookkeeping, reconciliation, and compliance data preparation for CA firms, delivered under your firm's name on a confidential basis.">
+<meta property="og:url" content="https://www.ledgerwhiz.in/for-cas/">
+<meta name="theme-color" content="#0F2A3F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F2A3F;
+    --navy-deep:#0A1F30;
+    --ink:#1B2530;
+    --ink-soft:#5B6672;
+    --line:#E4E7EB;
+    --paper:#FFFFFF;
+    --paper-alt:#F7F8FA;
+    --accent:#B8863A;
+    --accent-soft:#F4ECDD;
+    --radius:6px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Sora',sans-serif; margin:0; color:var(--ink); font-weight:600;}
+  a{color:inherit; text-decoration:none;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 28px;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms !important; transition-duration:.001ms !important;}}
+
+  header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-bottom:1px solid var(--line);}
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
+  .logo{font-family:'Sora',sans-serif; font-size:19px; font-weight:700; color:var(--navy);}
+  .logo span{color:var(--accent);}
+  .tag-pill{font-size:11.5px; font-weight:600; color:var(--accent); background:var(--accent-soft); padding:4px 10px; border-radius:999px; margin-left:10px; letter-spacing:.03em; text-transform:uppercase;}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:var(--radius); font-size:14px; font-weight:600; cursor:pointer; border:1px solid transparent;}
+  .btn-primary{background:var(--navy); color:#fff;}
+  .btn-primary:hover{background:var(--navy-deep);}
+  .btn-light{background:#fff; color:var(--navy);}
+  .btn-light:hover{background:#EDEFF2;}
+  .btn-outline-light{border-color:rgba(255,255,255,0.3); color:#fff;}
+
+  /* HERO */
+  .hero{background:linear-gradient(180deg,var(--navy) 0%, var(--navy-deep) 100%); color:#fff; padding:88px 0 76px; text-align:center;}
+  .badge{display:inline-block; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.16); color:#CBD5DF; font-size:13px; padding:8px 16px; border-radius:999px; margin-bottom:26px;}
+  .hero h1{font-size:clamp(30px,4.4vw,46px); line-height:1.15; max-width:18ch; margin:0 auto; color:#fff;}
+  .hero h1 .accent{color:var(--accent);}
+  .hero p{color:#B9C3CE; font-size:16px; max-width:54ch; margin:20px auto 30px;}
+  .hero-cta{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+
+  section{padding:80px 0;}
+  .section-head{max-width:640px; margin:0 auto 44px; text-align:center;}
+  .eyebrow{font-size:12.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase; color:var(--accent); margin-bottom:12px; display:block;}
+  .section-head h2{font-size:clamp(25px,3vw,32px); line-height:1.2;}
+  .section-head p{color:var(--ink-soft); font-size:15.5px; margin-top:14px;}
+
+  /* WHY */
+  .why{background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .why-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px;}
+  .why-icon{width:40px; height:40px; border-radius:8px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:16px;}
+  .why-card h3{font-size:16.5px; margin-bottom:8px;}
+  .why-card p{font-size:14px; color:var(--ink-soft); margin:0;}
+
+  /* SCOPE */
+  .scope-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+  .scope-item{display:flex; gap:14px; align-items:flex-start; padding:18px; border:1px solid var(--line); border-radius:var(--radius);}
+  .scope-num{font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent); font-weight:600; flex-shrink:0; padding-top:2px;}
+  .scope-item h4{font-size:15px; margin-bottom:4px;}
+  .scope-item p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+
+  /* PRICING */
+  .pricing{background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .price-tables{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  .price-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .price-head{background:var(--navy); color:#fff; padding:18px 22px;}
+  .price-head h3{color:#fff; font-size:16px;}
+  .price-head span{display:block; color:#9FB0BE; font-size:12.5px; margin-top:2px;}
+  table{width:100%; border-collapse:collapse;}
+  table th{text-align:left; font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); padding:12px 22px; border-bottom:1px solid var(--line); background:var(--paper-alt);}
+  table td{padding:11px 22px; font-size:14px; border-bottom:1px solid var(--line);}
+  table tr:last-child td{border-bottom:none;}
+  table td.amt{font-family:'IBM Plex Mono',monospace; text-align:right; font-weight:500; color:var(--navy);}
+  .price-note{padding:16px 22px; font-size:12.5px; color:var(--ink-soft); background:var(--paper-alt);}
+
+  /* PACKAGE CARDS */
+  .pkg-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .pkg-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:30px 26px; text-align:center;}
+  .pkg-card.featured{border-color:var(--navy); box-shadow:0 16px 34px -20px rgba(15,42,63,0.4); position:relative;}
+  .pkg-card.featured::before{content:"Most chosen"; position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--navy); color:#fff; font-size:11px; font-weight:600; letter-spacing:.04em; padding:4px 12px; border-radius:999px;}
+  .pkg-label{display:block; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:16px;}
+  .pkg-price{display:flex; flex-direction:column; align-items:center; gap:2px;}
+  .pkg-from{font-size:12.5px; color:var(--ink-soft);}
+  .pkg-amt{font-family:'Sora',sans-serif; font-size:32px; font-weight:700; color:var(--navy);}
+  .pkg-per{font-size:13px; color:var(--ink-soft);}
+  .pkg-note{font-size:12.5px; color:var(--ink-soft); margin-top:10px;}
+
+  .wa-float{position:fixed; bottom:24px; right:24px; z-index:60; background:#25D366; width:54px; height:54px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px -8px rgba(0,0,0,0.4); transition:transform .15s;}
+  .wa-float:hover{transform:scale(1.06);}
+
+  /* PROCESS */
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:32px; position:relative;}
+  .steps::before{content:""; position:absolute; top:22px; left:8%; right:8%; height:1px; background:repeating-linear-gradient(to right, var(--line) 0 6px, transparent 6px 12px);}
+  .step{position:relative;}
+  .step-num{width:44px; height:44px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:15px; margin-bottom:16px; position:relative; z-index:1;}
+  .step h3{font-size:15.5px; margin-bottom:6px;}
+  .step p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+
+  /* CTA */
+  .cta-band{background:var(--navy); color:#fff; text-align:center; padding:64px 0;}
+  .cta-band h2{color:#fff; font-size:clamp(24px,3vw,30px); margin-bottom:12px;}
+  .cta-band p{color:#B9C3CE; margin-bottom:26px;}
+
+  footer{background:var(--navy-deep); color:#93A0AC; padding:36px 0; font-size:13.5px; text-align:center;}
+  footer a{color:#B9C3CE;}
+  footer a:hover{color:#fff;}
+
+  html{-webkit-text-size-adjust:100%; text-size-adjust:100%;}
+
+  @media (max-width:900px){
+    .why-grid{grid-template-columns:repeat(2,1fr);}
+    .scope-grid{grid-template-columns:1fr;}
+    .price-tables{grid-template-columns:1fr;}
+    .pkg-grid{grid-template-columns:repeat(2,1fr);}
+    .steps{grid-template-columns:repeat(2,1fr); row-gap:26px;}
+    .steps::before{display:none;}
+    .btn{min-height:44px;}
+  }
+  @media (max-width:560px){
+    .why-grid{grid-template-columns:1fr;}
+    .pkg-grid{grid-template-columns:1fr;}
+    .hero{padding:64px 0 56px;}
+    section{padding:56px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="logo">Ledger<span>whiz</span><span class="tag-pill">For CA's</span></a>
+    <div style="display:flex; align-items:center; gap:20px;">
+      <a href="/" style="font-size:14.5px; color:var(--ink-soft);">← Home</a>
+      <a class="btn btn-primary" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20am%20a%20CA%20firm%20and%20would%20like%20to%20discuss%20an%20engagement." target="_blank" rel="noopener">Talk to us</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">An engagement exclusively for Chartered Accountant firms</span>
+      <h1>Back-Office Processing, <span class="accent">Delivered Under Your Firm's Name.</span></h1>
+      <p>Ledgerwhiz provides bookkeeping, reconciliation, and compliance data preparation for CA firms on a confidential, white-label basis — allowing your team to focus on review, advisory, and client relationships.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#pricing">View pricing</a>
+        <a class="btn btn-outline-light" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20am%20a%20CA%20firm%20and%20would%20like%20to%20discuss%20an%20engagement." target="_blank" rel="noopener">Request a consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why CA firms engage us</span>
+        <h2>A Processing Partner, Not A Client-Facing Brand</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card"><div class="why-icon">01</div><h3>Confidential &amp; White-Label</h3><p>All deliverables carry your firm's format and standards. Client data is handled under NDA, and Ledgerwhiz is never disclosed to your clients.</p></div>
+        <div class="why-card"><div class="why-icon">02</div><h3>Scalable Capacity</h3><p>Absorb peak-season volume — return filing, audit season, year-end closing — without recruiting or training temporary staff.</p></div>
+        <div class="why-card"><div class="why-icon">03</div><h3>Transparent, Volume-Based Fees</h3><p>Engagement cost is fixed by accounting entry volume and agreed in advance, with no open-ended retainers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE -->
+  <section id="scope">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Scope of services</span>
+        <h2>Back-Office Processing, Prepared To Your Working Papers</h2>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-item"><span class="scope-num">01</span><div><h4>Bookkeeping &amp; Data Entry</h4><p>Transaction entry maintained in Tally, Zoho, Xero, Excel, or your firm's preferred software.</p></div></div>
+        <div class="scope-item"><span class="scope-num">02</span><div><h4>Bank &amp; Ledger Reconciliation</h4><p>Periodic reconciliation of bank statements and general ledger accounts.</p></div></div>
+        <div class="scope-item"><span class="scope-num">03</span><div><h4>GST Data Preparation</h4><p>GSTR-1/3B working sheets and GSTR-2B reconciliation, prepared for your review and filing.</p></div></div>
+        <div class="scope-item"><span class="scope-num">04</span><div><h4>ITR Data Preparation</h4><p>Computation sheets and supporting schedules prepared in advance of the filing season.</p></div></div>
+        <div class="scope-item"><span class="scope-num">05</span><div><h4>TDS &amp; Payroll Processing</h4><p>TDS workings, challan preparation, and payroll processing for client staff.</p></div></div>
+        <div class="scope-item"><span class="scope-num">06</span><div><h4>Finalisation Support</h4><p>Trial balance clean-up and supporting schedules for your finalisation of accounts.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATIONS -->
+  <section style="background:var(--paper-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Registration &amp; compliance support</span>
+        <h2>One-Time Registrations, Processed On Your Behalf</h2>
+        <p>Documentation and portal filing for statutory registrations your clients require — delivered under your firm's name.</p>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-item"><span class="scope-num">01</span><div><h4>Digital Signature Certificate (DSC)</h4><p>Class 3 DSC issuance for individuals and company directors.</p></div></div>
+        <div class="scope-item"><span class="scope-num">02</span><div><h4>Company &amp; LLP Incorporation</h4><p>Private limited company and LLP incorporation, including statutory filings.</p></div></div>
+        <div class="scope-item"><span class="scope-num">03</span><div><h4>MSME (Udyam) Registration</h4><p>Udyam registration and updates for eligible client businesses.</p></div></div>
+        <div class="scope-item"><span class="scope-num">04</span><div><h4>GST Registration</h4><p>New GSTIN registration, amendments, and cancellation processing.</p></div></div>
+        <div class="scope-item"><span class="scope-num">05</span><div><h4>IEC Registration</h4><p>Import Export Code registration and DGFT documentation support.</p></div></div>
+        <div class="scope-item"><span class="scope-num">06</span><div><h4>PF Registration</h4><p>Provident Fund registration for client businesses with eligible staff strength.</p></div></div>
+        <div class="scope-item"><span class="scope-num">07</span><div><h4>ESI Registration</h4><p>Employees' State Insurance registration and related documentation.</p></div></div>
+        <div class="scope-item"><span class="scope-num">08</span><div><h4>Trademark Registration</h4><p>Trademark search, application filing, and prosecution support.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Accounting fees</span>
+        <h2>Simple, Predictable Packages</h2>
+        <p>Billing cycle to match your firm's own — monthly, quarterly, or annual. Final fee depends on accounting entry volume; a formal quote follows a brief volume assessment.</p>
+      </div>
+      <div class="pkg-grid">
+        <div class="pkg-card">
+          <span class="pkg-label">Monthly</span>
+          <div class="pkg-price"><span class="pkg-from">Starting from</span><span class="pkg-amt">₹1,999</span><span class="pkg-per">/ month</span></div>
+          <div class="pkg-note">Billed every month</div>
+          <a class="btn btn-primary" style="width:100%; justify-content:center; margin-top:20px;" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20would%20like%20a%20quote%20for%20the%20Monthly%20accounting%20package." target="_blank" rel="noopener">Request a quote</a>
+        </div>
+        <div class="pkg-card featured">
+          <span class="pkg-label">Quarterly</span>
+          <div class="pkg-price"><span class="pkg-from">Starting from</span><span class="pkg-amt">₹2,499</span><span class="pkg-per">/ quarter</span></div>
+          <div class="pkg-note">Billed every quarter</div>
+          <a class="btn btn-primary" style="width:100%; justify-content:center; margin-top:20px;" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20would%20like%20a%20quote%20for%20the%20Quarterly%20accounting%20package." target="_blank" rel="noopener">Request a quote</a>
+        </div>
+        <div class="pkg-card">
+          <span class="pkg-label">Annual</span>
+          <div class="pkg-price"><span class="pkg-from">Starting from</span><span class="pkg-amt">₹4,999</span><span class="pkg-per">/ year</span></div>
+          <div class="pkg-note">Billed once a year</div>
+          <a class="btn btn-primary" style="width:100%; justify-content:center; margin-top:20px;" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20would%20like%20a%20quote%20for%20the%20Annual%20accounting%20package." target="_blank" rel="noopener">Request a quote</a>
+        </div>
+      </div>
+      <div class="price-note" style="text-align:center; margin-top:24px; background:none;">Final pricing is confirmed after a brief assessment of monthly accounting entry volume. All fees stated are exclusive of GST.</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="wrap">
+      <h2>Ready To Discuss An Engagement?</h2>
+      <p>Share your firm's average client entry volume and we will revert with a formal quote the same day.</p>
+      <a class="btn btn-light" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20am%20a%20CA%20firm%20and%20would%20like%20to%20discuss%20an%20engagement." target="_blank" rel="noopener">Request a consultation</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0 0 8px;">Ledgerwhiz — back-office processing services exclusively for Chartered Accountant firms.</p>
+    <p style="margin:0;"><a href="tel:+919995394549">+91 99953 94549</a> &nbsp;·&nbsp; <a href="mailto:office@ledgerwhiz.in">office@ledgerwhiz.in</a></p>
+    <p style="margin:12px 0 0;"><a href="https://whatsapp.com/channel/0029VbDwecMKLaHpdBRP323n" target="_blank" rel="noopener">Tax Updates Channel</a> &nbsp;·&nbsp; <a href="https://instagram.com/ledgerwhiz.official" target="_blank" rel="noopener">Instagram</a></p>
+    <p style="margin:14px 0 0; color:#5B6672;">© 2026 Ledgerwhiz. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919995394549?text=Hi%20Ledgerwhiz%2C%20I%20am%20a%20CA%20firm%20and%20would%20like%20to%20discuss%20an%20engagement." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M17.6 6.32A8.86 8.86 0 0 0 3.36 16.86L2 22l5.28-1.38a8.86 8.86 0 0 0 4.2 1.07h.01a8.86 8.86 0 0 0 6.11-15.37ZM11.5 20.1h-.01a7.37 7.37 0 0 1-3.75-1.03l-.27-.16-2.79.73.75-2.72-.18-.28a7.37 7.37 0 1 1 13.68-3.92 7.33 7.33 0 0 1-7.43 7.38Zm4.04-5.52c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05a6.05 6.05 0 0 1-1.78-1.1 6.68 6.68 0 0 1-1.23-1.53c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.07-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31.11.15 1.57 2.4 3.8 3.36.53.23.94.36 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.31-.54 1.5-1.06.18-.51.18-.95.13-1.05-.05-.1-.2-.16-.42-.27Z"/></svg>
+</a>
+
+</body>
+</html>
